@@ -1,0 +1,29 @@
+<div class="header">
+<md-toolbar>
+    
+        <!-- <button md-button routerLink="/"> -->
+        <!-- <md-icon>home</md-icon>  -->
+        <a routerLink="/"><span class="s">S</span><span class="w">W</span>
+            {{title}}</a>
+    
+        <!-- This fills the remaining space of the current row -->
+        <span class="fill-remaining-space"></span>
+        <div fxLayout="row" fxShow="false" fxShow.gt-xs>
+            <a routerLink="/about" routerLinkActive="active"><img src="./assets/images/shawn_pic.png" alt="about icon" height="40px"></a>
+            <a routerLink="/portfolio" routerLinkActive="active"><img src="./assets/images/code_icon.png" alt="portfolio icon" height="40px"></a>
+            <a routerLink="/contact" routerLinkActive="active"><img src="./assets/images/contact.png" alt="contact icon" height="40px"></a>
+            
+        </div>
+        <button md-button [md-menu-trigger-for]="menu" fxHide="false" fxHide.gt-xs>
+         <md-icon>menu</md-icon>
+        </button>
+    
+</md-toolbar>
+    <md-menu x-position="before" #menu="mdMenu">
+        <button md-menu-item routerLink="/about">About</button>
+        <button md-menu-item routerLink="/portfolio">Portfolio</button>
+        <button md-menu-item routerLink="/contact">Contact</button>
+        
+        <!--<button md-menu-item>Help</button>-->
+    </md-menu>
+</div>

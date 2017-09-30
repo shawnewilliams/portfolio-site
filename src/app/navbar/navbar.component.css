@@ -1,0 +1,43 @@
+.fill-remaining-space {
+    /*This fills the remaining space, by using flexbox.  
+   Every toolbar row uses a flexbox row layout. */
+   flex: 1 1 auto;
+ }
+
+ md-toolbar {
+     margin: 0px auto;
+ }
+ .mat-toolbar{
+    background: #ECECEC;
+    color: #9F9F9F;
+}
+
+ span {
+     font-size: 2.5rem;
+     font-weight: 900;
+ }
+
+ .s {
+     color: #000000;
+ }
+
+ .w {
+     color: #720000
+ }
+
+ a {
+     text-decoration: none;
+     padding: 0px 20px;
+ }
+
+ .active {
+    /* box-shadow: 10px 10px 5px #888888; */
+    -webkit-filter: drop-shadow(3px 3px 3px #494949);
+    filter: drop-shadow(3px 3px 3px #494949);
+ }
+
+.header {
+    margin: 0 auto;
+    padding: 0;
+}
+
