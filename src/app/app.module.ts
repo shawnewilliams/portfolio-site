@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PaperCanvasComponent } from './paper-canvas/paper-canvas.component';
+import { TypingAnimationDirective } from 'angular-typing-animation/typing-animation.directive';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { PaperCanvasComponent } from './paper-canvas/paper-canvas.component';
     ContactComponent,
     PortfolioComponent,
     NavbarComponent,
-    PaperCanvasComponent
+    PaperCanvasComponent,
+    TypingAnimationDirective
   ],
   imports: [
     BrowserModule,

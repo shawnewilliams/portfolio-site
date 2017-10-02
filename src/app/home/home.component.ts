@@ -14,10 +14,17 @@ import { flyInOut } from '../animations/app.animation';
   ]
 })
 export class HomeComponent implements OnInit {
+  start: boolean = false
 
   constructor() { }
 
   ngOnInit() {
+    // Start after 1 second + 1 second of startDelay
+    this.start = true
+  }
+  onTypingAnimationComplete () {
+    console.log('#TYPING ANIMATION COMPLETE')
+    // ...
   }
 
 }

@@ -1,7 +1,68 @@
 <div class="container" 
     fxLayout="column"
     fxLayoutGap="10px">
+
+    <img src="./assets/images/clock-top.png" width="100%" alt="clock">
+
     <md-card>
-        <h1><span class="shawn">SHAWN</span><span class="williams">WILLIAMS</span></h1>
+        <img src="./assets/images/shawn-logo.png" width="80%" alt="shawn picture">
+        <h3 class="text-center">
+            <span typingAnimation [typeSpeed]="35" [condition]="start" [startDelay]="500" (complete)="onTypingAnimationComplete()" [hideCursorOnComplete]="true">
+                Full Stack Web and Multiplatform Mobile App Developer
+            </span>
+        </h3>
+        
+      <div fxaLayout="row">
+          <div fxFlex="10%">
+          </div>
+        <div fxFlex="20%" class="vert-align">
+          <img src="./assets/images/shawn_pic.png" width="80%" alt="clock">
+        </div>
+    
+        <div fxFlex="60%" class="vert-align">
+          <span typingAnimation [typeSpeed]="50" [condition]="start" [startDelay]="3000" (complete)="onTypingAnimationComplete()" [hideCursorOnComplete]="true">
+            Hi, I'm Shawn. It's nice to meet you. Thanks for visiting my site. 
+            I build and design web and mobile apps using modern technology. 
+            Please browse my site and let me know what you think. 
+            I would love to work with you on your next project!
+          </span>
+        </div>
+        <div fxFlex="10%">
+          </div>
+      </div>
     </md-card>
+
+    <img src="./assets/images/clock-middle.png" width="100%" alt="clock">
+
+    
+    <md-card>
+        
+      <div fxLayout="row" 
+          fxLayoutGap="10px"
+          fxLayout.xs="column">
+
+     
+        <div fxFlex>
+          <img src="./assets/images/html-5-logo.png" height="100px" alt="html logo">
+        </div>
+        <div fxFlex>
+          <img src="./assets/images/css3.png" height="100px" alt="css logo">
+        </div>
+     
+     
+      
+        <div fxFlex>
+          <img src="./assets/images/angular.png" height="100px" alt="angular logo">
+        </div>
+        <div fxFlex>
+          <img src="./assets/images/nodejs-logo.png" height="100px" alt="node.js logo">
+        </div>
+     
+    </div>
+    </md-card>
+
+    <img src="./assets/images/clock-bottom.png" width="100%" alt="clock">
+    
+
+    <!-- <img src="./assets/images/clock-bottom.png" width="100%" alt="clock"> -->
 </div>
