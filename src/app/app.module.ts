@@ -17,6 +17,8 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PaperCanvasComponent } from './paper-canvas/paper-canvas.component';
 import { TypingAnimationDirective } from 'angular-typing-animation/typing-animation.directive';
 
+import { CommonModule, APP_BASE_HREF, LocationStrategy, HashLocationStrategy} from '@angular/common';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,7 +37,10 @@ import { TypingAnimationDirective } from 'angular-typing-animation/typing-animat
     FlexLayoutModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+  { provide: LocationStrategy, useClass: HashLocationStrategy }
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
