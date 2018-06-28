@@ -3,7 +3,7 @@
 }
 
 .williams {
-    color: #720000
+    color: #720000;
 }
 
 h1 {
@@ -22,6 +22,7 @@ img {
     display: block;
     margin: 0 auto;
 }
+
 .vert-align {
     margin: auto 0;
 }

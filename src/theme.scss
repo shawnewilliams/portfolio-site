@@ -1,0 +1,153 @@
+@import '~@angular/material/theming';
+
+$general-typography: mat-typography-config(
+    $font-family: '"Roboto Slab", "Helvetica Neue", sans-serif', 
+    $body-2:        mat-typography-level(14px, 24px, 600)  
+  );
+
+@include mat-core($general-typography);
+
+    $mat-portfolio: (
+        50: #f10000,
+        100: #d80000,
+        200: #be0000,
+        300: #a50000,
+        400: #8b0000,
+        500: #720000,
+        600: #580000,
+        700: #3f0000,
+        800: #250000,
+        900: #0c0000,
+        A100: #ff0c0c,
+        A200: #ff2525,
+        A400: #ff3f3f,
+        A700: #000000,
+        contrast: (
+            //Don't Change These Colors
+            50 : #000000,
+            100 : #000000,
+            200 : #000000,
+            300 : #000000,
+            400 : #000000,
+            500 : #ffffff,
+            600 : #ffffff,
+            700 : #ffffff,
+            800 : #ffffff,
+            900 : #ffffff,
+            A100 : #000000,
+            A200 : #000000,
+            A400 : #000000,
+            A700 : #000000,
+        )
+    );
+    $custom-warn: (
+        50: #e3b6b2,
+        100: #dca4a0,
+        200: #d5928d,
+        300: #cf817a,
+        400: #c86f68,
+        500: #C15D55,
+        600: #b94c43,
+        700: #a6443d,
+        800: #943d36,
+        900: #81352f,
+        A100: #eac8c5,
+        A200: #f1dad8,
+        A400: #f8ebea,
+        A700: #6e2d28,
+        contrast: (
+            //Don't Change These Colors
+            50 : #000000,
+            100 : #000000,
+            200 : #000000,
+            300 : #000000,
+            400 : #000000,
+            500 : #ffffff,
+            600 : #ffffff,
+            700 : #ffffff,
+            800 : #ffffff,
+            900 : #ffffff,
+            A100 : #000000,
+            A200 : #000000,
+            A400 : #000000,
+            A700 : #000000,
+        )
+    );
+
+    $custom-accent: (
+        50: #2d343a,
+        100: #384149,
+        200: #434e57,
+        300: #4e5b66,
+        400: #596874,
+        500: #647583,
+        600: #7d8f9c,
+        700: #8c9ba7,
+        800: #9aa8b2,
+        900: #a9b4bd,
+        A100: #7d8f9c,
+        A200: #6F8291,
+        A400: #647583,
+        A700: #b7c1c8,
+        contrast: (
+            //Don't Change These Colors
+            50 : #000000,
+            100 : #000000,
+            200 : #000000,
+            300 : #000000,
+            400 : #000000,
+            500 : #ffffff,
+            600 : #ffffff,
+            700 : #ffffff,
+            800 : #ffffff,
+            900 : #ffffff,
+            A100 : #000000,
+            A200 : #000000,
+            A400 : #000000,
+            A700 : #000000,
+        )
+    );
+
+    $custom-background: (
+        50: #fdfdfd,
+        100: #f9f9f9,
+        200: #f6f6f6,
+        300: #f2f2f2,
+        400: #efefef,
+        500: #ececec,
+        600: #eaeaea,
+        700: #e7e7e7,
+        800: #e4e4e4,
+        900: #dfdfdf,
+        A100: #ffffff,
+        A200: #ffffff,
+        A400: #ffffff,
+        A700: #ffffff,
+        contrast: (
+            //Don't Change These Colors
+            50 : #000000,
+            100 : #000000,
+            200 : #000000,
+            300 : #000000,
+            400 : #000000,
+            500 : #ffffff,
+            600 : #ffffff,
+            700 : #ffffff,
+            800 : #ffffff,
+            900 : #ffffff,
+            A100 : #000000,
+            A200 : #000000,
+            A400 : #000000,
+            A700 : #000000,
+        )
+    );
+
+    $my-app-primary: mat-palette($mat-portfolio);
+    $my-app-accent:  mat-palette($custom-accent, 500, 900, A100);
+    $my-app-warn:    mat-palette($custom-warn);
+    $my-app-background: mat-palette($custom-background, 500, 900, A100);
+    // $my-app-background: #ECECEC;
+
+    $my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+    
+    @include angular-material-theme($my-app-theme);
