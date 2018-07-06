@@ -12,7 +12,7 @@
     color: #9F9F9F;
 }
 
- span {
+ .sw span {
     font-family: "Roboto", "Helvetica Neue", 'sans-serif';
      font-size: 2.5rem;
      font-weight: 900;
@@ -29,6 +29,10 @@
  a {
     text-decoration: none;
     padding: 0px 20px;
+    /* color: #720000; */
+    color: rgb(249, 249, 249);
+    display: flex;
+    flex-direction: row;
     -webkit-filter: drop-shadow(1px 1px 1px #494949);
     filter: drop-shadow(1px 1px 1px #494949);
 
@@ -37,6 +41,15 @@
     -ms-transition: filter .15s ease;
     -o-transition: filter .15s ease;
     transition: filter .15s ease; 
+ }
+
+ .nav span {
+    font-family: "Roboto", "Helvetica Neue", 'sans-serif';
+    font-size: 1.1rem;
+    font-weight: 900;
+    margin-left: 8px;
+    margin-top: 5px;
+    
  }
 
  .active {

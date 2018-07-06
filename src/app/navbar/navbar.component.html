@@ -3,14 +3,14 @@
     
         <!-- <button md-button routerLink="/"> -->
         <!-- <md-icon>home</md-icon>  -->
-        <a routerLink="/"><span class="s">S</span><span class="w">W</span></a>
+        <a class="sw" routerLink="/"><span class="s">S</span><span class="w">W</span></a>
     
         <!-- This fills the remaining space of the current row -->
         <span class="fill-remaining-space"></span>
         <div fxLayout="row" fxShow="false" fxShow.gt-xs>
-            <a routerLink="/about" routerLinkActive="active"><img src="./assets/images/shawn_pic.png" alt="about" height="40px"></a>
-            <a routerLink="/portfolio" routerLinkActive="active"><img src="./assets/images/code_icon.png" alt="portfolio" height="40px"></a>
-            <a routerLink="/contact" routerLinkActive="active"><img src="./assets/images/contact.png" alt="contact" height="40px"></a>
+            <a class="nav" routerLink="/about" routerLinkActive="active"><img src="./assets/images/shawn_pic.png" alt="about" height="40px"><span>About</span></a>
+            <a class="nav" routerLink="/portfolio" routerLinkActive="active"><img src="./assets/images/code_icon.png" alt="portfolio" height="40px"><span>Portfolio</span></a>
+            <a class="nav" routerLink="/contact" routerLinkActive="active"><img src="./assets/images/contact.png" alt="contact" height="40px"><span>Contact</span></a>
             
         </div>
         <button md-button [md-menu-trigger-for]="menu" fxHide="false" fxHide.gt-xs>
